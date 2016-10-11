@@ -14,13 +14,13 @@ specifically in the software [RevBayes](http://revbayes.com),
 to accommodate uncertainty in parameter estimates while leveraging the full power of likelihood based methods. 
 Provided here are the Rev scripts needed to run ChromoSSE in [RevBayes](http://revbayes.com).
 Please modify these scripts to use your own data,
-and feel free to contact us with any questions.
+and feel free to contact me with any questions.
 
 ### Contact:
 
 Will Freyman, UC Berkeley   
 freyman@berkeley.edu    
-[http://willfreyman.com](http://willfreyman.com)
+[http://willfreyman.org](http://willfreyman.org)
 
 ### Citation:
 
