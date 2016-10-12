@@ -6,36 +6,9 @@
 # freyman@berkeley.edu
 # http://willfreyman.org
 #
-
-
-####### variables that should be modified for each analysis:
-
-# read in the tree
-psi <- readTrees("data/phylo-bd.tree")[1]
-
-# We need to limit the maximum number of chromosomes,
-# so here we just use the largest chromosome count plus 10.
-max_chromo = 26
-
-# get the chromosome counts from a tab-delimited file
-chromo_data = readCharacterDataDelimited("data/aristolochia_chromosome_count.tsv", stateLabels=(max_chromo + 1), type="NaturalNumbers", delimiter="\t", headers=FALSE)
-
-# expected number of anagenetic events used for prior
-ana_events = 2
-
-# set the total number of MCMC iterations to run
-mcmc_iterations = 5500
-
-# set the number of iterations to exclude as burnin
-burnin = 500
-
-# set the number of iterations to sample from MCMC
-sample_freq = 1
-
-# set up an index for our MCMC moves
-mi = 0
-
-
+#
+# This script specifies the ChromoSSE model and MCMC analysis.
+#
 
 
 ####### Chromosome Model

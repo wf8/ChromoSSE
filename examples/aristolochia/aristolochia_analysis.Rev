@@ -1,0 +1,41 @@
+
+#
+# ChromoSSE: Cladogenetic and Anagenetic Phylogenetic Models of Chromosome Number Evolution
+# 
+# Will Freyman, UC Berkeley
+# freyman@berkeley.edu
+# http://willfreyman.org
+#
+#
+# This script sets up and runs a ChromoSSE analysis for the Aristolochia dataset.
+# These are the variables that should be modified for each ChromoSSE analysis.
+#
+#
+
+# Read in the tree:
+psi <- readTrees("data/phylo-bd.tree")[1]
+
+# We need to limit the maximum number of chromosomes,
+# so here we just use the largest chromosome count plus 10.
+max_chromo = 26
+
+# Get the observed chromosome counts from a tab-delimited file:
+chromo_data = readCharacterDataDelimited("data/aristolochia_chromosome_count.tsv", stateLabels=(max_chromo + 1), type="NaturalNumbers", delimiter="\t", headers=FALSE)
+
+# Set the expected number of anagenetic events used for prior mean:
+ana_events = 2
+
+# Set the total number of MCMC iterations to run:
+mcmc_iterations = 5500
+
+# Set the number of iterations to exclude as burnin:
+burnin = 500
+
+# Set the number of iterations to sample from MCMC:
+sample_freq = 1
+
+# Set up an index for our MCMC moves:
+mi = 0
+
+# Now run the ChromoSSE analysis:
+source("../../ChromoSSE.Rev")
