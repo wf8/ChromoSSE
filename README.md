@@ -16,6 +16,13 @@ Provided here are the Rev scripts needed to run ChromoSSE in [RevBayes](http://r
 Please modify these scripts to use your own data,
 and feel free to contact me with any questions.
 
+### To run an example ChromoSSE analysis:
+
+```
+cd examples/aristolochia/
+rb aristolochia_analysis.Rev
+```
+
 ### Contact:
 
 Will Freyman, UC Berkeley   
