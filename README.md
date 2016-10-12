@@ -16,6 +16,11 @@ Provided here are the Rev scripts needed to run ChromoSSE in [RevBayes](http://r
 Please modify these scripts to use your own data,
 and feel free to contact me with any questions.
 
+### Citation:
+
+Freyman, W.A. and S. Höhna. *In prep.* 
+Cladogenetic and Anagenetic Models of Chromosome Number Evolution: a Bayesian Model Averaging Approach.
+
 ### To run an example ChromoSSE analysis:
 
 ```
@@ -23,16 +28,18 @@ cd examples/aristolochia/
 rb aristolochia_analysis.Rev
 ```
 
+### To plot the output of a ChromoSSE analysis:
+
+Use the [RevGadegets](https://github.com/revbayes/RevGadgets) R package
+and [this example R script](plot_results.R) to generate figures like this:
+
+![ChromoSSE plot](examples/aristolochia/data/aristolochia_ancestral_states.jpg)
+
 ### Contact:
 
 Will Freyman, UC Berkeley   
 freyman@berkeley.edu    
 [http://willfreyman.org](http://willfreyman.org)
-
-### Citation:
-
-Freyman, W.A. and S. Höhna. *In prep.* 
-Cladogenetic and Anagenetic Models of Chromosome Number Evolution: a Bayesian Model Averaging Approach.
 
 ### Other stuff:
 
