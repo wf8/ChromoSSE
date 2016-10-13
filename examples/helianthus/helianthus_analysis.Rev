@@ -1,0 +1,45 @@
+
+#
+# ChromoSSE: Cladogenetic and Anagenetic Phylogenetic Models of Chromosome Number Evolution
+# 
+# Will Freyman, UC Berkeley
+# freyman@berkeley.edu
+# http://willfreyman.org
+#
+#
+# This script sets up and runs a ChromoSSE analysis for the Helianthus dataset.
+# These are the variables that should be modified for each ChromoSSE analysis.
+#
+#
+
+# Read in the tree:
+psi <- readTrees("data/phylo.tree")[1]
+
+# We need to limit the maximum number of chromosomes,
+# so here we just use the largest chromosome count plus 10:
+max_chromo = 61
+
+# Get the observed chromosome counts from a tab-delimited file:
+chromo_data = readCharacterDataDelimited("data/chromosome_count2.tsv", stateLabels=(max_chromo + 1), type="NaturalNumbers", delimiter="\t", headers=FALSE)
+
+# Here we set the expected number of anagenetic events used for prior mean.
+# We use 2 expected events over the phylogeny, but you may want to test 
+# for prior sensitivity. For very large trees with many expected chromosome 
+# changes this value should be increased.
+ana_events = 2
+
+# Here we set the probability of sampling species at the present.
+# We artificially use 1.0, but you can experiment with more realistic settings:
+rho_bd = 1.0
+
+# Set the total number of MCMC iterations to run:
+mcmc_iterations = 5500
+
+# Set the number of iterations to exclude as burnin:
+burnin = 500
+
+# Set the number of iterations to sample from MCMC:
+sample_freq = 1
+
+# Now run the ChromoSSE analysis:
+source("../../ChromoSSE.Rev")

@@ -1,0 +1,67 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=56;
+	Taxlabels
+		Primula_alcalina
+		Primula_anvilensis
+		Primula_borealis1
+		Primula_borealis2
+		Primula_egaliksensis
+		Primula_egaliksensis2
+		Primula_egaliksensis3
+		Primula_egaliksensis4
+		Primula_egaliksensis5
+		Primula_egaliksensis6
+		Primula_egaliksensis7
+		Primula_egaliksensis8
+		Primula_farinosa1
+		Primula_farinosa2
+		Primula_farinosa3
+		Primula_farinosa4
+		Primula_farinosa5
+		Primula_farinosa6
+		Primula_farinosa7
+		Primula_farinosa8
+		Primula_farinosa9
+		Primula_fasciculata
+		Primula_halleri1
+		Primula_halleri2
+		Primula_incana1
+		Primula_incana2
+		Primula_incana3
+		Primula_involucrata
+		Primula_ioessa
+		Primula_magellanica1
+		Primula_magellanica2
+		Primula_magellanica3
+		Primula_misstassinica1
+		Primula_misstassinica2
+		Primula_misstassinica3
+		Primula_misstassinica4
+		Primula_misstassinica5
+		Primula_misstassinica6
+		Primula_mistassinica7
+		Primula_mistassinica8
+		Primula_mistassinica9
+		Primula_modesta
+		Primula_nutans1
+		Primula_nutans2
+		Primula_nutans3
+		Primula_nutans4
+		Primula_nutans5
+		Primula_nutans6
+		Primula_nutans7
+		Primula_nutans8
+		Primula_nutans9
+		Primula_scandinavica1
+		Primula_scandinavica2
+		Primula_scotica1
+		Primula_scotica2
+		Primula_specuicola
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((((((Primula_halleri1[&index=55,posterior=1.000000,ccp=1.000000]:0.126649,Primula_scotica2[&index=54,posterior=1.000000,ccp=1.000000]:0.126649)[&index=56,posterior=0.112794,ccp=0.666667,height_95%_HPD={nan,0.171379}]:0.002284,Primula_scotica1[&index=53,posterior=1.000000,ccp=0.666667]:0.128933)[&index=57,posterior=0.008370,ccp=0.125000,height_95%_HPD={nan,0.231663}]:0.011118,(Primula_farinosa1[&index=52,posterior=1.000000,ccp=1.000000]:0.134483,Primula_halleri2[&index=51,posterior=1.000000,ccp=1.000000]:0.134483)[&index=58,posterior=0.056596,ccp=0.125000,height_95%_HPD={nan,0.170228}]:0.005568)[&index=59,posterior=0.003189,ccp=0.250000,height_95%_HPD={0.011737,nan}]:0.017588,Primula_farinosa2[&index=50,posterior=1.000000,ccp=0.250000]:0.157638)[&index=60,posterior=0.001594,ccp=0.090909,height_95%_HPD={0.015873,nan}]:0.015873,(Primula_farinosa4[&index=49,posterior=1.000000,ccp=1.000000]:0.173333,Primula_farinosa5[&index=48,posterior=1.000000,ccp=1.000000]:0.173333)[&index=61,posterior=0.116381,ccp=0.090909,height_95%_HPD={nan,0.181193}]:0.000179)[&index=62,posterior=0.004384,ccp=0.010050,height_95%_HPD={nan,0.143744}]:0.272277,Primula_farinosa3[&index=47,posterior=1.000000,ccp=0.010050]:0.445788)[&index=63,posterior=0.396572,ccp=0.380419,height_95%_HPD={nan,0.406117}]:0.180141,(Primula_farinosa8[&index=46,posterior=1.000000,ccp=1.000000]:0.035668,Primula_farinosa9[&index=45,posterior=1.000000,ccp=1.000000]:0.035668)[&index=64,posterior=1.000000,ccp=0.380419,height_95%_HPD={nan,0.640893}]:0.590262)[&index=65,posterior=0.818254,ccp=0.817049,height_95%_HPD={nan,0.427065}]:0.004280,(Primula_farinosa6[&index=44,posterior=1.000000,ccp=1.000000]:0.302626,Primula_farinosa7[&index=43,posterior=1.000000,ccp=1.000000]:0.302626)[&index=66,posterior=1.000000,ccp=0.817049,height_95%_HPD={nan,0.454185}]:0.327583)[&index=67,posterior=0.991232,ccp=0.991232,height_95%_HPD={nan,0.241357}]:0.111733,(((((Primula_egaliksensis[&index=42,posterior=1.000000,ccp=1.000000]:0.036202,Primula_egaliksensis2[&index=41,posterior=1.000000,ccp=1.000000]:0.036202)[&index=68,posterior=0.109605,ccp=0.408451,height_95%_HPD={nan,0.118374}]:0.000624,Primula_egaliksensis7[&index=40,posterior=1.000000,ccp=0.408451]:0.036826)[&index=69,posterior=0.028298,ccp=0.155172,height_95%_HPD={nan,0.122023}]:0.110897,Primula_egaliksensis3[&index=39,posterior=1.000000,ccp=0.155172]:0.147724)[&index=70,posterior=0.023117,ccp=0.004783,height_95%_HPD={nan,0.09918}]:0.015920,(((Primula_egaliksensis4[&index=38,posterior=1.000000,ccp=1.000000]:0.075554,Primula_egaliksensis8[&index=37,posterior=1.000000,ccp=1.000000]:0.075554)[&index=71,posterior=0.095257,ccp=0.379310,height_95%_HPD={nan,0.122368}]:0.068774,Primula_egaliksensis6[&index=36,posterior=1.000000,ccp=0.379310]:0.144328)[&index=72,posterior=0.034675,ccp=0.384615,height_95%_HPD={nan,0.142634}]:0.001511,Primula_egaliksensis5[&index=35,posterior=1.000000,ccp=0.384615]:0.145839)[&index=73,posterior=0.010363,ccp=0.004783,height_95%_HPD={nan,0.060761}]:0.017805)[&index=74,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.523159}]:0.147823,((((Primula_misstassinica2[&index=34,posterior=1.000000,ccp=1.000000]:0.000828,Primula_misstassinica4[&index=33,posterior=1.000000,ccp=1.000000]:0.000828)[&index=75,posterior=0.123555,ccp=0.349593,height_95%_HPD={nan,0.137442}]:0.092763,Primula_misstassinica1[&index=32,posterior=1.000000,ccp=0.349593]:0.093590)[&index=76,posterior=0.049024,ccp=0.730769,height_95%_HPD={nan,0.099756}]:0.012256,((Primula_mistassinica8[&index=31,posterior=1.000000,ccp=1.000000]:0.004039,Primula_mistassinica9[&index=30,posterior=1.000000,ccp=1.000000]:0.004039)[&index=77,posterior=0.320048,ccp=0.319505,height_95%_HPD={nan,0.074824}]:0.039431,Primula_mistassinica7[&index=29,posterior=1.000000,ccp=0.319505]:0.043470)[&index=78,posterior=0.999203,ccp=0.730769,height_95%_HPD={nan,0.188486}]:0.062376)[&index=79,posterior=0.010363,ccp=0.007573,height_95%_HPD={nan,0.081608}]:0.028492,((Primula_misstassinica5[&index=28,posterior=1.000000,ccp=1.000000]:0.016476,Primula_misstassinica6[&index=27,posterior=1.000000,ccp=1.000000]:0.016476)[&index=80,posterior=0.119570,ccp=0.314961,height_95%_HPD={nan,0.117423}]:0.102447,Primula_misstassinica3[&index=26,posterior=1.000000,ccp=0.314961]:0.118923)[&index=81,posterior=0.050618,ccp=0.007573,height_95%_HPD={nan,0.15041}]:0.015415)[&index=82,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.503251}]:0.177129)[&index=83,posterior=1.000000,ccp=0.991232,height_95%_HPD={nan,0.52101}]:0.430476)[&index=84,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.832871}]:0.604701,(((Primula_incana2[&index=25,posterior=1.000000,ccp=1.000000]:0.085642,Primula_incana3[&index=24,posterior=1.000000,ccp=1.000000]:0.085642)[&index=85,posterior=0.332802,ccp=0.332802,height_95%_HPD={nan,0.11641}]:0.056193,Primula_incana1[&index=23,posterior=1.000000,ccp=0.332802]:0.141835)[&index=86,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.784377}]:0.755631,(Primula_scandinavica1[&index=22,posterior=1.000000,ccp=1.000000]:0.019564,Primula_scandinavica2[&index=21,posterior=1.000000,ccp=1.000000]:0.019564)[&index=87,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0.80849}]:0.877903)[&index=88,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,1.17349}]:0.449177)[&index=89,posterior=0.876843,ccp=0.876843,height_95%_HPD={nan,0.377681}]:0.406440,((Primula_magellanica1[&index=20,posterior=1.000000,ccp=1.000000]:0.021468,Primula_magellanica2[&index=19,posterior=1.000000,ccp=1.000000]:0.021468)[&index=90,posterior=0.332802,ccp=0.332802,height_95%_HPD={nan,0.169953}]:0.412857,Primula_magellanica3[&index=18,posterior=1.000000,ccp=0.332802]:0.434325)[&index=91,posterior=1.000000,ccp=0.876843,height_95%_HPD={nan,1.85741}]:1.318758)[&index=92,posterior=1.000000,ccp=0.979275,height_95%_HPD={nan,2.88409}]:2.165214,(((((Primula_borealis1[&index=17,posterior=1.000000,ccp=1.000000]:0.042110,Primula_borealis2[&index=16,posterior=1.000000,ccp=1.000000]:0.042110)[&index=93,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,2.48924}]:1.823984,Primula_anvilensis[&index=15,posterior=1.000000,ccp=1.000000]:1.866094)[&index=94,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,1.07236}]:0.301491,Primula_specuicola[&index=14,posterior=1.000000,ccp=1.000000]:2.167584)[&index=95,posterior=0.951375,ccp=0.990933,height_95%_HPD={nan,0.574335}]:0.281093,Primula_modesta[&index=13,posterior=1.000000,ccp=0.990933]:2.448677)[&index=96,posterior=0.923077,ccp=0.922263,height_95%_HPD={nan,0.814181}]:0.535230,Primula_alcalina[&index=12,posterior=1.000000,ccp=0.922263]:2.983907)[&index=97,posterior=0.979275,ccp=0.979275,height_95%_HPD={nan,0.968372}]:0.934390)[&index=98,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,5.77349}]:5.464036,((((((((Primula_nutans6[&index=11,posterior=1.000000,ccp=1.000000]:0.033956,Primula_nutans8[&index=10,posterior=1.000000,ccp=1.000000]:0.033956)[&index=99,posterior=0.383818,ccp=0.344687,height_95%_HPD={nan,0.192977}]:0.083204,Primula_nutans5[&index=9,posterior=1.000000,ccp=0.344687]:0.117160)[&index=100,posterior=0.292547,ccp=0.548708,height_95%_HPD={nan,0.185526}]:0.044049,Primula_nutans9[&index=8,posterior=1.000000,ccp=0.548708]:0.161209)[&index=101,posterior=0.200478,ccp=0.200478,height_95%_HPD={nan,0.155355}]:0.027694,Primula_nutans7[&index=7,posterior=1.000000,ccp=0.200478]:0.188903)[&index=102,posterior=1.000000,ccp=0.625000,height_95%_HPD={nan,0.390462}]:0.209017,(Primula_nutans2[&index=6,posterior=1.000000,ccp=1.000000]:0.237277,Primula_nutans4[&index=5,posterior=1.000000,ccp=1.000000]:0.237277)[&index=103,posterior=0.192507,ccp=0.625000,height_95%_HPD={nan,0.217294}]:0.160643)[&index=104,posterior=0.041451,ccp=0.020465,height_95%_HPD={nan,0.15904}]:0.029518,(Primula_nutans1[&index=4,posterior=1.000000,ccp=1.000000]:0.398400,Primula_nutans3[&index=3,posterior=1.000000,ccp=1.000000]:0.398400)[&index=105,posterior=0.141092,ccp=0.020465,height_95%_HPD={nan,0.217726}]:0.029039)[&index=106,posterior=0.993224,ccp=0.993224,height_95%_HPD={nan,0.559538}]:0.369063,Primula_fasciculata[&index=2,posterior=1.000000,ccp=0.993224]:0.796502)[&index=107,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,3.40947}]:2.160384,Primula_involucrata[&index=1,posterior=1.000000,ccp=1.000000]:2.956886)[&index=108,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,6.24574}]:6.425447)[&index=109,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,1.61252}]:0.617666,Primula_ioessa[&index=0,posterior=1.000000,ccp=1.000000]:10.000000)[&index=110,posterior=1.000000,ccp=1.000000,height_95%_HPD={nan,0}]:0.000000;
+End;
