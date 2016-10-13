@@ -12,30 +12,34 @@
 #
 #
 
-# read in the tree
+# Read in the tree:
 psi <- readTrees("data/phylo-bd.tree")[1]
 
-# we need to limit the maximum number of chromosomes,
+# We need to limit the maximum number of chromosomes,
 # so here we just use the largest chromosome count plus 10:
 max_chromo = 26
 
-# get the observed chromosome counts from a tab-delimited file:
+# Get the observed chromosome counts from a tab-delimited file:
 chromo_data = readCharacterDataDelimited("data/aristolochia_chromosome_count.tsv", stateLabels=(max_chromo + 1), type="NaturalNumbers", delimiter="\t", headers=FALSE)
 
-# set the expected number of anagenetic events used for prior mean:
+# Here we set the expected number of anagenetic events used for prior mean.
+# We use 2 expected events over the phylogeny, but you may want to test 
+# for prior sensitivity. For very large trees with many expected chromosome 
+# changes this value should be increased.
 ana_events = 2
 
-# set the total number of MCMC iterations to run:
+# Here we set the probability of sampling species at the present.
+# We artificially use 1.0, but you can experiment with more realistic settings:
+rho_bd = 1.0
+
+# Set the total number of MCMC iterations to run:
 mcmc_iterations = 5500
 
-# set the number of iterations to exclude as burnin:
+# Set the number of iterations to exclude as burnin:
 burnin = 500
 
-# set the number of iterations to sample from MCMC:
+# Set the number of iterations to sample from MCMC:
 sample_freq = 1
 
-# set up an index for our MCMC moves:
-mi = 0
-
-# now run the ChromoSSE analysis:
+# Now run the ChromoSSE analysis:
 source("../../ChromoSSE.Rev")

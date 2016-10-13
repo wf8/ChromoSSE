@@ -11,8 +11,11 @@
 #
 
 
-####### Chromosome Model
+# set an index for the MCMC moves
+mi = 0
 
+
+####### Chromosome Model
 
 
 # We'll use exponential priors to model the rates of polyploidy and
@@ -151,7 +154,7 @@ chromotree ~ dnCDCladoBDP( rootAge            = psi.rootAge(),
                     Q                         = R,
                     delta                     = 1.0,
                     pi                        = root_frequencies,
-                    rho                       = 1.0,
+                    rho                       = rho_bd,
                     condition                 = "time",
                     taxa                      = taxa )
 

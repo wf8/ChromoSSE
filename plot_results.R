@@ -22,7 +22,11 @@ p = plot_ancestral_states("examples/aristolochia/data/aristolochia_ancestral_sta
                           shoulder_label_size=2,
                           alpha=.3)
 
-# now let's add a time scale
+
+# using ggtree and ggplot2 functions we can now add all sorts of details
+# to our figure:
+
+# let's add a time scale
 root_age = 10.0
 p = p + theme_tree2() +
     scale_x_continuous(breaks=c(10, 5, 0), minor_breaks=c(2.5, 7.5), labels=c("0", "5", "10")) +
