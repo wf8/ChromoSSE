@@ -165,10 +165,9 @@ chromotree.clampCharData(chromo_data)
 
 
 ### set up the monitors that will output parameter values to file and screen
-monitors[1] = mnFile(filename="output/chromosse.trees", printgen=sample_freq, psi)
-monitors[2] = mnScreen(printgen=1, gamma, gamma_l, delta, delta_l, rho, eta, clado_no_change, clado_fission, clado_fusion, clado_polyploid, clado_demipoly,turnover,total_speciation)
-monitors[3] = mnModel(filename="output/chromosse.log", printgen=sample_freq)
-monitors[4] = mnJointConditionalAncestralState(tree=psi, cdbdp=chromotree, type="NaturalNumbers", printgen=sample_freq, withTips=true, withStartStates=true, filename="output/chromosse-anc.log")
+monitors[1] = mnScreen(printgen=1, gamma, gamma_l, delta, delta_l, rho, eta, clado_no_change, clado_fission, clado_fusion, clado_polyploid, clado_demipoly,turnover,total_speciation)
+monitors[2] = mnModel(filename="output/chromosse.log", printgen=sample_freq)
+monitors[3] = mnJointConditionalAncestralState(tree=psi, cdbdp=chromotree, type="NaturalNumbers", printgen=sample_freq, withTips=true, withStartStates=true, filename="output/chromosse-anc.log")
 
 ### finish model
 mymodel = model(chromotree)
@@ -180,10 +179,9 @@ mymcmc = mcmc(mymodel, monitors, moves)
 mymcmc.run(generations=mcmc_iterations)
 
 ### summarize ancestral states ###
-anc_states = readAncestralStateTrace(base + "output/combined-anc"+ run_num + ".log")
-anc_trees = readAncestralStateTreeTrace(base + "output/combined" + run_num + ".trees", treetype="clock")
+anc_states = readAncestralStateTrace("output/chromosse-anc.log")
 
 # make summary tree
-ancestralStateTree(psi, anc_states, anc_trees, include_start_states=true, "output/ancestral_states_results.tree", burnin)
+ancestralStateTree(psi, anc_states, include_start_states=true, "output/ancestral_states_results.tree", burnin)
 
 q()
