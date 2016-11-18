@@ -18,8 +18,9 @@ and feel free to contact me with any questions.
 
 ### Citation:
 
-Freyman, W.A. and S. Höhna. *In prep.* 
+Freyman, W.A. and S. Höhna. Submitted to *Systematic Biology*. 
 Cladogenetic and Anagenetic Models of Chromosome Number Evolution: a Bayesian Model Averaging Approach.
+[preprint](http://biorxiv.org/content/early/2016/11/16/086629)
 
 ### To run an example ChromoSSE analysis:
 
