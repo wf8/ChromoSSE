@@ -89,10 +89,10 @@ speciation_pr <- 1 / speciation_mean
 
 clado_no_change ~ dnExponential(speciation_pr)
 
-clado_fission ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential(speciation_pr), p=0.5)
-clado_fusion ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential(speciation_pr), p=0.5)
-clado_polyploid ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential(speciation_pr), p=0.5)
-clado_demipoly ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential(speciation_pr), p=0.5)
+clado_fission ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential( speciation_pr * 100 ), p=0.5)
+clado_fusion ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential( speciation_pr * 100 ), p=0.5)
+clado_polyploid ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential( speciation_pr * 100 ), p=0.5)
+clado_demipoly ~ dnReversibleJumpMixture(constantValue=0.0, baseDistribution=dnExponential( speciation_pr * 100 ), p=0.5)
 
 clado_no_change.setValue(speciation_mean)
 clado_fission.setValue(0.01)
