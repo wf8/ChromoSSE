@@ -31,7 +31,7 @@ rb aristolochia_analysis.Rev
 
 ### To plot the output of a ChromoSSE analysis:
 
-Use the [RevGadegets](https://github.com/revbayes/RevGadgets) R package
+Use the [RevGadgets](https://github.com/revbayes/RevGadgets) R package
 and [this example R script](plot_results.R) to generate figures like this:
 
 ![ChromoSSE plot](examples/aristolochia/data/aristolochia_ancestral_states.jpg)
