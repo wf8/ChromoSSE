@@ -16,6 +16,14 @@ Provided here are the Rev scripts needed to run ChromoSSE in [RevBayes](http://r
 Please modify these scripts to use your own data,
 and feel free to contact me with any questions.
 
+### Tutorial:
+
+I've written a tutorial on how to use RevBayes for a wide range of chromosome evolution analyses using ChromEvol, BiChroM, ChromoSSE and other related models:
+
+* [Tutorial (pdf)](https://github.com/revbayes/revbayes_tutorial/raw/master/tutorial_TeX/RB_Chromosome_Evolution_Tutorial/RB_Chromosome_Evolution_Tutorial.pdf) 
+* [Example scripts](http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Chromosome_Evolution_Tutorial/scripts.zip) 
+* [Example data](http://rawgit.com/revbayes/revbayes_tutorial/master/RB_Chromosome_Evolution_Tutorial/data.zip) 
+
 ### Citation:
 
 Freyman, W.A. and S. Höhna. Submitted to *Systematic Biology*. 
