@@ -32,9 +32,9 @@ I've written a tutorial on how to use RevBayes for a wide range of chromosome ev
 ### Citation:
 
 Freyman, W.A. and S. Höhna. 2017. Cladogenetic and anagenetic models of chromosome number evolution: a Bayesian model averaging approach. *Systematic Biology* syx065
-[preprint](http://biorxiv.org/content/early/2016/11/16/086629)
-[journal](https://academic.oup.com/sysbio/article-abstract/67/2/195/4037179)
-[pdf](https://willfreyman.org/assets/pdf/2017_Freyman_and_Hoehna.pdf)
+[[preprint]](http://biorxiv.org/content/early/2016/11/16/086629)
+[[journal]](https://academic.oup.com/sysbio/article-abstract/67/2/195/4037179)
+[[pdf]](https://willfreyman.org/assets/pdf/2017_Freyman_and_Hoehna.pdf)
 
 ### To run an example ChromoSSE analysis:
 
