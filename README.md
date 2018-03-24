@@ -16,6 +16,11 @@ Provided here are the Rev scripts needed to run ChromoSSE in [RevBayes](http://r
 Please modify these scripts to use your own data,
 and feel free to contact me with any questions.
 
+### Requirements:
+
+Please make sure you are using RevBayes v1.0.7 or greater. Some Rev language functions
+have changed and earlier versions will not work.
+
 ### Tutorial:
 
 I've written a tutorial on how to use RevBayes for a wide range of chromosome evolution analyses using ChromEvol, BiChroM, ChromoSSE and other related models:
@@ -26,9 +31,10 @@ I've written a tutorial on how to use RevBayes for a wide range of chromosome ev
 
 ### Citation:
 
-Freyman, W.A. and S. Höhna. Submitted to *Systematic Biology*. 
-Cladogenetic and Anagenetic Models of Chromosome Number Evolution: a Bayesian Model Averaging Approach.
+Freyman, W.A. and S. Höhna. 2017. Cladogenetic and anagenetic models of chromosome number evolution: a Bayesian model averaging approach. *Systematic Biology* syx065
 [preprint](http://biorxiv.org/content/early/2016/11/16/086629)
+[journal](https://academic.oup.com/sysbio/article-abstract/67/2/195/4037179)
+[pdf](https://willfreyman.org/assets/pdf/2017_Freyman_and_Hoehna.pdf)
 
 ### To run an example ChromoSSE analysis:
 
@@ -47,7 +53,7 @@ and [this example R script](plot_results.R) to generate figures like this:
 ### Contact:
 
 Will Freyman, UC Berkeley   
-freyman@berkeley.edu    
+willfreyman@gmail.com  
 [http://willfreyman.org](http://willfreyman.org)
 
 ### Other stuff:
