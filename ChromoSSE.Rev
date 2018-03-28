@@ -10,6 +10,8 @@
 # This script specifies the ChromoSSE model and MCMC analysis.
 #
 
+setOption("useScaling","true")
+
 
 # set an index for the MCMC moves
 mi = 0
